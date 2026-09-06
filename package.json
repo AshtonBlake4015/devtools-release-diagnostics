@@ -1,0 +1,21 @@
+{
+  "name": "devtools-release-diagnostics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/diagnostics_server.ts",
+    "demo": "tsx src/release_probe.ts",
+    "test": "tsx --test test/diagnostic_workflow.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^5.12.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.17.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
